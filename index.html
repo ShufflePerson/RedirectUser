@@ -137,6 +137,7 @@
                 window.removeEventListener('blur', blurListener);
                 loadingContent.innerHTML = "<h1>Connection Failed</h1><p>Could not detect Steam. Please ensure it is installed and running.</p>";
             }
+            window.close();
         }, 5000);
     };
 </script>
