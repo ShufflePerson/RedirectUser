@@ -100,12 +100,12 @@
 <div class="container">
     <div id="loadingContent" class="content">
         <h1>Connecting to CI #1</h1>
-        <p>Awaiting permission to open Steam...</p>
+        <p>Please allow Steam to open!</p>
         <div class="loader"></div>
     </div>
     <div id="successAnimation" class="success-animation">
         <div class="success-icon">✓</div>
-        <p class="success-message">Connection Established!<br>Connected to CI #1</p>
+        <p class="success-message">You have joined!<br>Connected to CI #1</p>
     </div>
 </div>
 
@@ -133,10 +133,6 @@
         }
 
         setTimeout(() => {
-            if (!hasBlurred) {
-                window.removeEventListener('blur', blurListener);
-                loadingContent.innerHTML = "<h1>Connection Failed</h1><p>Could not detect Steam. Please ensure it is installed and running.</p>";
-            }
             window.close();
         }, 5000);
     };
