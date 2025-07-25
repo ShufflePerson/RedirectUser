@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Redirecting...</title>
+<script type="text/javascript">
+window.onload = function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const redirectUrl = urlParams.get('q');
+  if (redirectUrl) {
+    window.location.replace(redirectUrl);
+  }
+};
+</script>
+</head>
+<body>
+<p>Connecting you to CI #1</p>
+</body>
+</html>
